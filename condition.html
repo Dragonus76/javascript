@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Condition</title>
+ </head>
+<body>
+<script>
+
+// Combiner les operateurs 
+
+var condition1, condition2, result;
+
+condition1 = 2 > 8; // false 
+condition2 = 8 > 2; // true 
+
+result = condition1 && condition2;
+
+alert(result); // Affiche: "false"
+
+
+var result = 2 > 8 && 8 > 2;
+alert(result); // Affiche "false"
+
+
+if(true){
+
+    alert("Coucou");
+
+}
+
+if(false){
+    alert("pas de coucou");
+
+}
+
+if (2 < 8 && 8>= 4){
+    // cette condition renvoie "true , le code est donc exécuté"
+    alert('la condition est bien vérifiés.');
+}
+
+if (2 > 8 || 8 <= 4){
+    // cette condition  renvoie "false", le code n'est donc pas exécuté
+ alert("pas d'execution")
+}
+
+if(confirm('Voulez-vous exécuter le code Javascript de cette page ?')){
+    alert('le code a bien été exécuté !');
+}
+
+// La structure else "sinon"
+if(confirm('Pour accéder à ce site vous devez avoir 18 ans ou plus , cliquez sur "OK" si c\'est le cas.')){
+    alert('Vous allez etres redirigé vers le site.');
+}
+
+else{
+    alert("Désolé, vous n'avez pas accés à ce site.");
+}
+
+// La structure elseif pour dire « sinon si
+
+
+var floor = parseInt(prompt("Entrez l'étage ou l'ascenseur doit se rendre (de -2 à 30:"));
+    if(floor == 0){
+        alert("Vous vous trouvez déja au rez-de -chaussez.");
+    }else if (-2 <= floor && floor <= 30){
+        alert("Direction l'etage n°" + floor + '!');
+    }else{
+        alert("l'étages spécifié n'existe pas.");
+    }
+
+
+    var drawer = parseInt(prompt('Choisissez le tirroir à ouvrir (1 à 4:'));
+    if(drawer == 1){
+
+        alert('Contient divers outils pour dessiner');
+
+    }else if (drawer == 2){
+        alert('Contient du matériel iformatique : des cables, des compasants, etc.');
+
+    }else if (drawer == 3 ) {
+
+        alert('AH ? Ce tiroir est fermé à clé ! Dommage !');
+    }else if (drawer == 4){
+        alert('Contient des vétement : des chemises, des pantalons, etc.');
+
+    }else{
+
+        alert("Info du jour : le meubles ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroir négatifs n'existent pas.");
+    }
+
+    var drawer = parseInt(prompt('Choisissez le tiroir à ouvrir (1 à 4) :'));
+
+switch (drawer) {
+    case 1:
+        alert('Contient divers outils pour dessiner : du papier, des crayons, etc...');
+    break;
+    
+    case 2:
+        alert('Contient du matériel informatique : des câbles, des composants, etc...');
+    break;
+    
+    case 3:
+        alert('Ah ? Ce tiroir est fermé à clé ! Dommage !');
+    break;
+    
+    case 4:
+        alert('Contient des vêtements : des chemises, des pantalons, etc...');
+    break;
+    
+    default:
+        alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
+}
+
+    var drawer = parseInt(prompt('Choisissez le tiroir à ouvrir (1 à 4) :'));
+
+switch (drawer) {
+    case 1:
+        alert('Contient divers outils pour dessiner : du papier, des crayons, etc...');
+    
+    case 2:
+        alert('Contient du matériel informatique : des câbles, des composants, etc...');
+    
+    case 3:
+        alert('Ah ? Ce tiroir est fermé à clé ! Dommage !');
+    
+    case 4:
+        alert('Contient des vêtements : des chemises, des pantalons, etc...');
+    
+    default:
+        alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
+}
+ 
+</script>
+
+</body>
+</html>
