@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+ <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Activité partie 4 - jQuery - basé sur le MOOC Simplifiez vos développements Javascript avec jQuery - OpenClassrooms - Adaptation Christophe Malo">
+        <meta name="keywords" content="jQuery, Ajax, Javascript, HTML5, CSS3, Bootstrap">
+        <meta name="author" content="Mustapha ">
+        <title>EXO</title>
+        </head>
+        <body>
+
+        <script>
+
+        var age = parseInt(prompt('Quel est votre age ?'));//Ne pas oublier : il faut "parser"(cela consiste a analyser) la valeur renvoyé par prompt()pour avoir un nombre !
+
+            if(age <= 0){ // Il faut penser au fait que l'utilisateur peut rentrer un age negatif
+
+            alert("Oh vraiment ? Vous avez moin d'un an ? C'est pas credible=p");
+
+            }else if (1 <= age && age < 18){
+
+                alert("Vous n'ete pas encore majeur.");
+
+             }else if (18 <= age && age < 50){
+                 
+                 alert('Vous etes majeur mais pas encore senior');
+
+             }else if (50 <= age && age < 60){
+
+                 alert('Vous etes senior mais pas encore retraité');
+
+
+             }else if (60 <= age && age < 120){
+
+                 alert('Vous etes retarités, profitez de votre temps libre !');
+
+             }else if (age > 120){// Ne pas oublier les pus de 120 ans, ils n'existent probablement pas mais on le met dans le doute
+
+                alert("Plus de 120 ans ?!! C'est possible ça");
+
+
+             }else{
+                 // Si prompt()contient autre chose que les intervalles de nombre ci-contre alors l'utilisateur a ecrit n'importe quoi
+
+                 alert("Vous n'avez pas entré d'age !");
+             }
+
+
+        </script>
+</body
+</html> 

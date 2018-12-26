@@ -129,7 +129,64 @@ switch (drawer) {
     default:
         alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
 }
- 
+
+var drawer = prompt('Entrez la valeur 1 :');
+
+    switch(drawer){
+        case 1:
+            alert('bravo !');
+            break;
+
+            default:
+
+                alert('Perdu !');
+    }
+
+  var drawer = prompt('Entrez la valeur 1');
+
+    switch(drawer){
+        case '1':
+    
+        alert('Bravo !');
+        break;
+
+        default:
+            alert('Perdu !');
+    }
+
+    var startMessage = 'Votre catégorie :',
+        endMessage,
+        adult = confirm ('Etes-vous majeur ?');
+        
+        if(adult){
+            // la variable "adult"contient un booléen , on peut donc directement
+        endMessage ='18+';
+        
+        }else{
+            endMessage = '-18';
+        }
+
+        alert(startMessage + endMessage);
+
+
+var startMessage = 'Votre catégorie :',
+
+    endMessage,
+
+    adult = confirm('Etes-vous majeur ?');
+
+    endMessage = adult ? '18+' : '-18';
+    
+    alert(startMessage + endMessage);
+    alert('Votre catégorie : ' + (confirm('Êtes-vous majeur ?') ? '18+' : '-18'));
+
+    var conditionTest = 'Fonctionnera ? Fonctionnera pas ? ';
+
+        if(conditionTest){
+            alert('Fonctionne !');
+        }else{
+            alert('Ne fonctionne pas !');
+        }
 </script>
 
 </body>
