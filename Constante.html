@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Constante</title>
+ </head>
+<body>
+
+    <script>
+
+
+    // Declaration d'une Constante.
+
+    const monTauxDeTVA = 20.0;
+
+    // Declaration de trois variable
+var monMontantHt;
+var monMontantTTC;
+var monMontantTVA;
+
+// Affectation d'une valeur a une variable 
+
+monMontantHt = 1590;
+console.log(monMontantHt);
+
+// Incrementation d'une variable.
+monMontantHt++;
+console.log(monMontantHt)// Identique a monMontantHt = monMontantHt + 1;
+/* A partir de cette ligne monMontantHt vaut 101, */
+
+//Décrementation d'une variable.
+monMontantHt--; // Identique a monMontantHt = monMontantHt - 1;
+/* A partir de cette ligne monMontantHt vaut de nouveau 1590 */
+
+// Operation aritmétiques sur les variable et constantes.
+
+monMontantTVA = monMontantHt * monTauxDeTVA / 100;
+monMontantTTC = monMontantHt + monMontantTVA;
+
+//Affichage du resultat directement dans la page html
+
+document.write(monMontantTTC);
+
+
+    </script>
+
+    </body>
+    </html>

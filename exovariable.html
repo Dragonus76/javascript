@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Constante</title>
+ </head>
+<body>
+
+    <script>
+
+
+    // Declaration de trois variable,
+
+    var nombre1;
+    var nombre2;
+    var somme;
+
+
+    /*
+
+
+    *Affectation de la saisie de l'utilisateur aux variable.
+    *
+    *
+    *
+    les deux variables sont donc de types String.
+    */
+
+    nombre1 = window.prompt('Veuillez saisir un premier nombre:');
+    nombre2 = window.prompt('Veuillez saisir un deuxiéme nombre:');
+
+
+    /*
+    * window.prompt() a renvoyé une chaine de caractere méme si on a saisi un nombre.
+    *On doit donc convertir nos variables en nombres avant de pouvoir les additionner 
+    *
+    *
+    La fonction parseInt() ou parseFloat() convertit une variable de type String.
+    en une variable de types Number.
+
+    */
+
+    nombre1 = parseInt(nombre1);
+    nombre2 = parseInt(nombre2);
+
+    /*Addition des deux variables.
+    *
+    *
+    *
+    Ce n'est Pas une concatenation car les deux variables sont de types  Number.
+    /*
+    //Affichage du resultat directement dans la page html.
+    */
+    document.write(somme);
+
+
+
+
+   
+    </script>
+
+    </body>
+    </html>

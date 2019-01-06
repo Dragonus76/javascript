@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+
+		var nicks = ' ',
+
+			nick,
+			proceed = true;
+
+			while(proceed){
+
+				nick = prompt('Entrez un prénon :');
+
+				if(nick){
+
+					nicks += nick + ' '; // Ajoute le nouveau prénom ainsi qu'une espace juste aprés
+
+				}else{
+					proceed = false; // Aucun n'a été entré,donc on fait en sorte d'invalider la condition
+				}
+			}
+
+			alert(nicks);//Affiche les prénoms à la suite 
+
+
+			var nicks = ' ';
+				nick;
+
+			while(true){
+				nick = prompt('Entrez un prenom');
+
+				if (nick){
+					nicks += nick + ' ';//Ajoute le nouveau prénom ainsi qu'une espace juste aprés
+				}else{
+					break; // On quitee la boucle
+				}
+			}
+
+			alert(nicks); // Affiche les pénoms à la suite 
+
+			//boucle for//
+
+			for (var iter = 0; iter < 5; iter++){
+
+				alert('Itération n°' + iter);
+			}
+
+
+			for (var nicks =' ',nick; true;){
+				nick = prompt('Entrez un prénom :');
+
+				if(nick){
+
+					nicks += nick + ' ';
+
+				}else{
+					break;
+				}
+			}
+
+			alert(nicks);
+
+
+			for (var i = 0, nicks = ' ',nick; true; i++){
+
+				nick = prompt('Entrez un prénom :');
+
+				if(nick){
+
+					nicks += nick + ' ';
+
+				}else{
+
+					break;
+				}
+			}
+
+			alert(' il y a ' + i + ' prénoms :\n\n ' + nicks);
+
+
+	</script>
+
+</body>
+</html>
