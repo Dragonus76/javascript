@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+var message = 'Ici la variable globale ! ';
+
+	function showMsg(){
+
+		var message = 'Ici variable locale';
+		alert(message);
+	}
+
+	showMsg();
+	alert(message);
+
+	// Maintenant que vous savez faire la différence entre les variables globales et locales, il vous faut savoir quand est-ce qu'il est bon d'utiliser l'une ou l'autre. Car malgré le sens pratique des variables globales (vu qu'elles sont accessibles partout) elles sont parfois à proscrire car elles peuvent rapidement vous perdre dans votre code (et engendrer des problèmes si vous souhaitez partager votre code, mais vous découvrirez cela par vous-même). Voici un exemple de ce qu'il ne faut pas faire
+
+// var var1 = 2,
+//     var2 = 3;
+//  function calculate() {
+//     alert(var1 * var2); // Affiche : « 6 » (sans blague ?!)
+// }
+
+//  calculate();
+
+
+// la bonne facon ;
+
+function calculate(){
+
+
+	var     var1 = 2,
+			var2 = 3;
+
+			alert(var1 * var2);
+}
+calculate();
+
+
+function myFunction(arg){
+
+
+	// Vous pouvez mettre un espace entre le nom de la fonction  et la 
+	// parenthése ouvrante si vous le souhaitez, la syntaxe est libre !  // votre code  
+}
+
+
+function myFunction (arg){ // Notre argument est la variable "arg" 
+	// Une fois que l'argument a été passé a la fonction, vous allez le retrouver dans la variable "arg"
+
+		alert('Votre argument : ' +arg);
+
+}
+myFunction('En voilà un beau test !');
+
+
+function myFunction(arg){
+
+	alert('Votre argument :' + arg);
+
+
+}
+myFunction(prompt('Que souhaitez-vous passer en argument à la fonction ?'));
+
+
+function scope(arg) {
+    // Au début de la fonction, la variable « arg » est créée avec le contenu de l'argument qui a été passé à la fonction
+  
+    alert(arg); // Nous pouvons maintenant utiliser l'argument comme souhaité : l'afficher, le modifier, etc.
+
+    // Une fois l'exécution de la fonction terminée, toutes les variables contenant les arguments sont détruites
+}
+
+function moar(first, second){
+
+	// On peut maintenant utiliser les variables "first" et "second" comme on le souahite :
+
+	alert('Votre premier argument: ' + first);
+	alert('Votre deuxième argument : ' + second);
+
+}
+moar('cooucou', 'hello');
+
+moar(prompt('Entrez votre premier argument:'),prompt('Entrez votre deuxième argument'));
+moar(
+	prompt(' 1 argument:'),
+	prompt(' 2 argument:'));
+
+	</script>
+
+</body>
+</html>

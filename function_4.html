@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> exercise 4 </title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		var test ='noir'; // On crée une variable "test" contenant le mot "noir"
+
+		(function(){ // Debut de la zone isolé 
+
+			var test ='blanc'; // On crée une variable du meme nom avec le contenu "blanc"dans la zone isolé
+
+			alert('Dans la zone isolée, la couleur est : ' +test)
+
+
+		})(); // Fin de la zone idolée. les variables cées dans cette zone sont détruites 
+
+			alert('Dans la zone isolée, la couleur est : ' +test) // le texte final contient bien le mot "noir"vu que la "zone isolé"n'a aucune influence sur le reste code 
+
+var sayHello = (function(){
+
+	return 'Yop !';
+})();
+
+alert(sayHello); // Affiche : "Yop !"
+
+	</script>
+
+</body>
+</html>
