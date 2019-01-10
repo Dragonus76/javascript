@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>exercise</title>
+</head>
+<body>
+
+	<!--
+Ce que nous vous demandons ici, c'est de stocker les prénoms dans un tableau. Pensez à la méthodepush(). À la fin, il faudra afficher le contenu du tableau, avecalert(), seulement si le tableau contient des prénoms ; en effet, ça ne sert à rien de l'afficher s'il ne contient rien. Pour l'affichage, séparez chaque prénom par une espace. Si le tableau ne contient rien, faites-le savoir à l’utilisateur, toujours avecalert().-->
+
+<script type="text/javascript">
+	
+
+	var familys = [], // Création du tableau vide 
+		family;
+
+
+	while (family = prompt('Entrez un prénom :')) { // Si la valeur assignée à la variable "family " est valide (différente de "null") alors la boucle s'exécute 
+
+		familys.push(family); // Ajoute le nouveau prénom au tableau
+}
+
+if (familys.length > 0){ //  On regarde le nombre d'items
+
+	alert(familys.join('')); // Affiche les prénoms à la suite 
+
+} else {
+
+	alert('il n\'y a aucun prénom en mémoire ! ');
+
+
+}
+
+
+</script>
+
+</body>
+</html>

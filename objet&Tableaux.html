@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Objet & Tableaux </title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var myString = 'Ceci est une chaine de caracteres'; // On crée un objet String
+
+	alert(myString.length); // On Affiche le nombre de caracteres, au moyen de la propriété "length"
+
+
+	alert(myString.toUpperCase()); // On récupére la chaine en majuscules,avec la méthode toUpperCase()
+    alert(myString.toLowerCase());
+
+
+   var myString ='test';
+
+   alert(myString.length); // Affiche : "4"
+
+   myString = 'test 2';
+
+   alert(myString.length); //Affiche : "6"(l'espace est aussi un carcactére)
+/////////////////////////////////////////////////////////////////////////////
+// Le contenu du tableau se définit entre crochets, et chaque valeur est séparée par une virgule. Les valeurs sont introduites comme pour des variables simples, c'est-à-dire qu'il faut des guillemets ou des apostrophes pour définir les chaînes de caractères :
+
+   var myArray = ['Mustapha','Anna','Ines','Khadija','Soumia','Chaima,','Leila',]
+
+
+	
+ alert(myArray[4]);
+
+
+// Chaine de caractères et tableaux 
+
+var cousinString = 'Anna Mustapha Ines',
+	cousinArray = cousinString.split('');
+
+	alert(cousinString);
+	alert(cousinArray);
+
+
+var cousinString_2 = cousinArray.join('-');
+
+	alert(cousinString_2);
+
+
+	//for(var i = 0; i < myArray.length; i++){
+
+
+		// alert(myArray[i]);
+	//} ici mauvaise solution risque de prendre du temps
+
+
+	for (var i = 0, c = myArray.length; i < c; i++){
+
+		alert(myArray[i])
+	}
+
+
+	var family = {
+		self: 'Mustapha',
+		wife: 'Anna',
+		daugther: 'Ines',
+		mamy: 'Khadija',
+		mamy2: 'Brigitte',
+
+	};
+
+var myObject = {
+
+	item1: 'Texte 1',
+	item2: 'Texte 2'
+
+
+
+};
+var id = 'wife';
+
+alert(family[id])
+
+family['cousin'] = 'celestin'; // Celestin est ajoute es est accessible via l'identifiant "uncle"
+
+family.papa = 'Ahmed'; // Meme operation mais d'une autre manière
+
+for (var id in family) { // On stocke l'identifiant dans « id » pour parcourir l'objet « family »
+	
+    alert(family[id]);
+		
+}
+
+// Utilisation des objets littéraux
+
+// L'exemple classique est la fonction qui calcule des coordonnées d'un élément HTML sur une page Web. Il faut ici retourner les coordonnéesxety.
+
+
+function getCoords(){
+
+	/* Script uncomplet, juste pour l'exemple */
+
+
+	return {
+		x: 12,
+		y:21
+	};
+}
+
+var coords = getCoords();
+
+alert(coords.x); // 12
+alert(coords.y); // 21
+
+
+</script>
+</body>
+</html>
